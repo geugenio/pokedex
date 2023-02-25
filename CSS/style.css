@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap);
+
+/* Gerais */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* PARTE DE CIMA */
+.cima{
+    height: 30%;
+}
+
+.cima-barra{
+    display: flex;
+    justify-content: space-between;
+
+}
+#search{
+    width: 60%;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(20, 102, 24);
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+#search::placeholder{
+    color:#00000041;
+}
+.pokedex{
+    width: 25rem;
+    height: 40rem;
+    background: linear-gradient(135deg, #53e05ffe, #2bc265fe);
+    border-radius: 20px;
+    padding: 0.4rem;
+    box-shadow: 0  12px 30px 0 rgba(0, 0, 0, 0.445), 0 3px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+i.fa-magnifying-glass{
+    border-radius: 50%;
+    background-color: #ffffff5e;
+    padding: 15px;
+}
+i.fa-magnifying-glass:hover{
+    cursor: pointer;
+}
+
+/* PARTES PRINCIPAIS */
+#pokemon-img{
+    width: 150px;
+    position: absolute;
+    transform: translate(70%, -90%);
+}
+#poke-name, #poke-id{
+    color: rgb(20, 102, 24);
+    font-weight:normal;
+}
+#poke-id{
+    font-size: 1.8rem;
+}
+
+#poke-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(30%);
+    width: 70%;
+    height: 10%;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+
+
+/* ESPECIFICAÇÕES DO POKEMON */
+
+#info{
+    background: linear-gradient(-135deg, #dcffdffe, #baffd5fe);
+    height: 65%;
+    border-radius: 10px;
+}
+
+.tipos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(30%);
+    gap: 10px;
+}
+.tipos span{
+    background-color: white;
+    padding: 0 .5em 0 .5em;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    transform: translateY(50%);
+}
+
+.status-linha{
+    transform: translateY(150%);
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.status-nome, status-numero{
+    width: 15%;
+
+}
+.barra-status{
+    width: 50%;
+    display: flex;
+    align-items:center;
+
+}
+.barra-out{
+    background-color: rgba(102, 255, 26, 0.459);
+    display: flex;
+    width: 100%;
+    height: 0.4rem;
+    border-radius: 4px;
+}
+
+.barra-inner{
+    background-color: rgb(31, 170, 77);
+    border-radius: 4px;
+    transition: 300ms ease-in-out;
+}
+
+
+/* BOTÕES INFERIORES */
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.botoes button{
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.548);
+}
+.botoes button:hover{
+    cursor: pointer;
+}
+.botoes button:active{
+    color: rgb(0, 0, 0);
+}
+
+
+/* Classes dos tipos */
+
+.poison{
+    background-color: rgb(207, 48, 207);
+}
+.grass{
+    background-color: rgb(39, 211, 39);
+}
+.metal{
+    background-color: rgb(109, 155, 163);
+}

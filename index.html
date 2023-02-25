@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link -->
+    <link rel="icon" type="image/png" sizes="16x16"  href="./favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <script defer src="./js/scripts.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <main>       
+        <div class="pokedex">
+            <div class="cima">
+                <div class="cima-barra">
+                    <form class="form">
+                        <i class="fa fa-solid fa-magnifying-glass"></i>
+                        <input class="desabilitado" type="search"
+                         id="search" 
+                         placeholder="ID/Nome..." 
+                         required
+                         >
+                    </form>
+                        <span id ="poke-id"></span>
+                </div>
+            </div>
+            <div id="info">
+                <img id="pokemon-img" src=""alt="">
+                <span id="poke-name"></span>
+                <div class="tipos">
+                    <span></span>
+                </div>
+
+                <div class="status hp">
+                    <div class="status-linha">
+                        <div class="status-nome">HP</div>
+                        <div class="barra-status">
+                            <div class="barra-out">
+                                <div class="barra-inner"></div>
+                            </div>
+                        </div>
+                        <div class="status-numero"></div>
+                    </div>
+                </div>
+                
+                <div class="status atk">
+                    <div class="status-linha">
+                        <div class="status-nome">ATK</div>
+                        <div class="barra-status">
+                            <div class="barra-out">
+                                <div class="barra-inner"></div>
+                            </div>
+                        </div>
+                        <div class="status-numero"></div>
+                    </div>
+                </div>
+                
+                <div class="status def">
+                    <div class="status-linha">
+                        <div class="status-nome">DEF</div>
+                        <div class="barra-status">
+                            <div class="barra-out">
+                                <div class="barra-inner"></div>
+                            </div>
+                        </div>
+                        <div class="status-numero"></div>
+                    </div>
+                </div>
+                
+                <div class="status satk">
+                    <div class="status-linha">
+                        <div class="status-nome">SATK</div>
+                        <div class="barra-status">
+                            <div class="barra-out">
+                                <div class="barra-inner"></div>
+                            </div>
+                        </div>
+                        <div class="status-numero"></div>
+                    </div>
+                </div>
+                
+                <div class="status sdef">
+                    <div class="status-linha">
+                        <div class="status-nome">SDEF</div>
+                        <div class="barra-status">
+                            <div class="barra-out">
+                                <div class="barra-inner"></div>
+                            </div>
+                        </div>
+                        <div class="status-numero"></div>
+                    </div>
+                </div>
+                
+                <div class="status spd">
+                    <div class="status-linha">
+                        <div class="status-nome">SPD</div>
+                        <div class="barra-status">
+                            <div class="barra-out">
+                                <div class="barra-inner"></div>
+                            </div>
+                        </div>
+                        <div class="status-numero"></div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="botoes">
+                <button>
+                    <i id = "antBtn"class="fa-solid fa-circle-chevron-left"></i>
+                </button>
+                <button>
+                    <i id = "proxBtn" class="fa-solid fa-circle-chevron-right"></i>
+                </button>
+            </div>
+            <!-- <img src="./Images/pokeballbg.png" alt="pokebola no fundo" class="pokeball-bg"> -->
+        </div>
+    </main>
+</body>
+</html>
